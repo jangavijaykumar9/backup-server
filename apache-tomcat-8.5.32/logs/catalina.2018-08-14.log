@@ -1,0 +1,192 @@
+14-Aug-2018 03:00:59.674 INFO [431] hudson.model.AsyncPeriodicWork$1.run Started Workspace clean-up
+14-Aug-2018 03:00:59.682 INFO [431] hudson.model.AsyncPeriodicWork$1.run Finished Workspace clean-up. 1 ms
+14-Aug-2018 03:48:59.689 SEVERE [Handling POST /jenkins/pluginManager/checkUpdatesServer from 157.44.148.224 : http-nio-8080-exec-10] hudson.model.UpdateSite.updateData ERROR: SHA-512 based signature in the update center doesn&#039;t match with the certificate in &#039;update site &#039;default&#039;&#039;
+14-Aug-2018 03:51:04.451 INFO [Thread-7] org.apache.coyote.AbstractProtocol.pause Pausing ProtocolHandler ["http-nio-8080"]
+14-Aug-2018 03:51:04.463 INFO [Thread-7] org.apache.coyote.AbstractProtocol.pause Pausing ProtocolHandler ["ajp-nio-8009"]
+14-Aug-2018 03:51:04.464 INFO [Thread-7] org.apache.catalina.core.StandardService.stopInternal Stopping service [Catalina]
+14-Aug-2018 03:51:05.613 WARNING [localhost-startStop-2] org.apache.catalina.loader.WebappClassLoaderBase.clearReferencesJdbc The web application [gitbucket] registered the JDBC driver [org.h2.Driver] but failed to unregister it when the web application was stopped. To prevent a memory leak, the JDBC Driver has been forcibly unregistered.
+14-Aug-2018 03:51:05.615 WARNING [localhost-startStop-2] org.apache.catalina.loader.WebappClassLoaderBase.clearReferencesThreads The web application [gitbucket] appears to have started a thread named [job-scheduler-1] but has failed to stop it. This is very likely to create a memory leak. Stack trace of thread:
+ java.base@10.0.2/java.lang.Thread.sleep(Native Method)
+ akka.actor.LightArrayRevolverScheduler.waitNanos(LightArrayRevolverScheduler.scala:85)
+ akka.actor.LightArrayRevolverScheduler$$anon$4.nextTick(LightArrayRevolverScheduler.scala:265)
+ akka.actor.LightArrayRevolverScheduler$$anon$4.run(LightArrayRevolverScheduler.scala:235)
+ java.base@10.0.2/java.lang.Thread.run(Thread.java:844)
+14-Aug-2018 03:51:05.615 WARNING [localhost-startStop-2] org.apache.catalina.loader.WebappClassLoaderBase.clearReferencesThreads The web application [gitbucket] appears to have started a thread named [job-akka.actor.default-dispatcher-4] but has failed to stop it. This is very likely to create a memory leak. Stack trace of thread:
+ java.base@10.0.2/java.io.RandomAccessFile.readBytes(Native Method)
+ java.base@10.0.2/java.io.RandomAccessFile.read(RandomAccessFile.java:406)
+ java.base@10.0.2/java.io.RandomAccessFile.readFully(RandomAccessFile.java:470)
+ java.base@10.0.2/java.util.zip.ZipFile$Source.readFullyAt(ZipFile.java:1296)
+ java.base@10.0.2/java.util.zip.ZipFile$Source.access$900(ZipFile.java:1140)
+ java.base@10.0.2/java.util.zip.ZipFile$ZipFileInputStream.initDataOffset(ZipFile.java:998)
+ java.base@10.0.2/java.util.zip.ZipFile$ZipFileInputStream.read(ZipFile.java:1013)
+ java.base@10.0.2/java.util.zip.ZipFile$ZipFileInflaterInputStream.fill(ZipFile.java:466)
+ java.base@10.0.2/java.util.zip.InflaterInputStream.read(InflaterInputStream.java:159)
+ org.apache.catalina.webresources.AbstractArchiveResource$JarInputStreamWrapper.read(AbstractArchiveResource.java:268)
+ org.apache.catalina.webresources.AbstractArchiveResource.getContent(AbstractArchiveResource.java:189)
+ org.apache.catalina.loader.WebappClassLoaderBase.findClassInternal(WebappClassLoaderBase.java:2268)
+ org.apache.catalina.loader.WebappClassLoaderBase.findClass(WebappClassLoaderBase.java:829)
+ org.apache.catalina.loader.WebappClassLoaderBase.loadClass(WebappClassLoaderBase.java:1278)
+ org.apache.catalina.loader.WebappClassLoaderBase.loadClass(WebappClassLoaderBase.java:1137)
+ java.base@10.0.2/java.lang.ClassLoader.defineClass1(Native Method)
+ java.base@10.0.2/java.lang.ClassLoader.defineClass(ClassLoader.java:1009)
+ java.base@10.0.2/java.security.SecureClassLoader.defineClass(SecureClassLoader.java:174)
+ org.apache.catalina.loader.WebappClassLoaderBase.findClassInternal(WebappClassLoaderBase.java:2339)
+ org.apache.catalina.loader.WebappClassLoaderBase.findClass(WebappClassLoaderBase.java:829)
+ org.apache.catalina.loader.WebappClassLoaderBase.loadClass(WebappClassLoaderBase.java:1278)
+ org.apache.catalina.loader.WebappClassLoaderBase.loadClass(WebappClassLoaderBase.java:1137)
+ scala.collection.immutable.RedBlackTree$.valuesIterator(RedBlackTree.scala:115)
+ scala.collection.immutable.TreeMap.valuesIterator(TreeMap.scala:196)
+ akka.actor.dungeon.ChildrenContainer$ChildrenIterable.valuesIterator(ChildrenContainer.scala:61)
+ akka.util.Collections$PartialImmutableValuesIterable.iterator(Collections.scala:26)
+ akka.util.Collections$PartialImmutableValuesIterable.foreach(Collections.scala:52)
+ akka.actor.dungeon.FaultHandling.terminate(FaultHandling.scala:150)
+ akka.actor.dungeon.FaultHandling.terminate$(FaultHandling.scala:142)
+ akka.actor.ActorCell.terminate(ActorCell.scala:370)
+ akka.actor.ActorCell.invokeAll$1(ActorCell.scala:468)
+ akka.actor.ActorCell.systemInvoke(ActorCell.scala:484)
+ akka.dispatch.Mailbox.processAllSystemMessages(Mailbox.scala:282)
+ akka.dispatch.Mailbox.run(Mailbox.scala:223)
+ akka.dispatch.Mailbox.exec(Mailbox.scala:234)
+ akka.dispatch.forkjoin.ForkJoinTask.doExec(ForkJoinTask.java:260)
+ akka.dispatch.forkjoin.ForkJoinPool$WorkQueue.runTask(ForkJoinPool.java:1339)
+ akka.dispatch.forkjoin.ForkJoinPool.runWorker(ForkJoinPool.java:1979)
+ akka.dispatch.forkjoin.ForkJoinWorkerThread.run(ForkJoinWorkerThread.java:107)
+14-Aug-2018 03:51:05.616 WARNING [localhost-startStop-2] org.apache.catalina.loader.WebappClassLoaderBase.clearReferencesThreads The web application [gitbucket] appears to have started a thread named [FileSystemWatchService] but has failed to stop it. This is very likely to create a memory leak. Stack trace of thread:
+ java.base@10.0.2/sun.nio.fs.LinuxWatchService.poll(Native Method)
+ java.base@10.0.2/sun.nio.fs.LinuxWatchService.access$600(LinuxWatchService.java:47)
+ java.base@10.0.2/sun.nio.fs.LinuxWatchService$Poller.run(LinuxWatchService.java:316)
+ java.base@10.0.2/java.lang.Thread.run(Thread.java:844)
+14-Aug-2018 03:51:05.618 WARNING [localhost-startStop-2] org.apache.catalina.loader.WebappClassLoaderBase.clearReferencesThreads The web application [gitbucket] appears to have started a thread named [AKKA_QRTZ_-1] but has failed to stop it. This is very likely to create a memory leak. Stack trace of thread:
+ java.base@10.0.2/java.lang.Object.wait(Native Method)
+ org.quartz.simpl.SimpleThreadPool$WorkerThread.run(SimpleThreadPool.java:568)
+14-Aug-2018 03:51:05.619 WARNING [localhost-startStop-2] org.apache.catalina.loader.WebappClassLoaderBase.clearReferencesThreads The web application [gitbucket] appears to have started a thread named [commit-count] but has failed to stop it. This is very likely to create a memory leak. Stack trace of thread:
+ java.base@10.0.2/java.lang.Object.wait(Native Method)
+ java.base@10.0.2/java.util.TimerThread.mainLoop(Timer.java:553)
+ java.base@10.0.2/java.util.TimerThread.run(Timer.java:506)
+14-Aug-2018 03:51:05.619 WARNING [localhost-startStop-2] org.apache.catalina.loader.WebappClassLoaderBase.clearReferencesThreads The web application [gitbucket] appears to have started a thread named [QuartzScheduler~job_QuartzSchedulerThread] but has failed to stop it. This is very likely to create a memory leak. Stack trace of thread:
+ java.base@10.0.2/java.lang.Object.wait(Native Method)
+ org.quartz.core.QuartzSchedulerThread.run(QuartzSchedulerThread.java:410)
+14-Aug-2018 03:51:05.623 SEVERE [localhost-startStop-2] org.apache.catalina.loader.WebappClassLoaderBase.checkThreadLocalMapForLeaks The web application [gitbucket] created a ThreadLocal with key of type [java.lang.ThreadLocal] (value [java.lang.ThreadLocal@76f0b71]) and a value of type [akka.dispatch.forkjoin.ForkJoinPool.Submitter] (value [akka.dispatch.forkjoin.ForkJoinPool$Submitter@1ca988f6]) but failed to remove it when the web application was stopped. Threads are going to be renewed over time to try and avoid a probable memory leak.
+14-Aug-2018 03:51:05.628 SEVERE [localhost-startStop-2] org.apache.catalina.loader.WebappClassLoaderBase.checkThreadLocalMapForLeaks The web application [gitbucket] created a ThreadLocal with key of type [scala.util.DynamicVariable$$anon$1] (value [scala.util.DynamicVariable$$anon$1@1b68923a]) and a value of type [gitbucket.core.servlet.MockFilterChain] (value [gitbucket.core.servlet.MockFilterChain@fea2b2a]) but failed to remove it when the web application was stopped. Threads are going to be renewed over time to try and avoid a probable memory leak.
+14-Aug-2018 03:51:05.631 SEVERE [localhost-startStop-2] org.apache.catalina.loader.WebappClassLoaderBase.checkThreadLocalMapForLeaks The web application [gitbucket] created a ThreadLocal with key of type [scala.util.DynamicVariable$$anon$1] (value [scala.util.DynamicVariable$$anon$1@1b68923a]) and a value of type [gitbucket.core.servlet.MockFilterChain] (value [gitbucket.core.servlet.MockFilterChain@fea2b2a]) but failed to remove it when the web application was stopped. Threads are going to be renewed over time to try and avoid a probable memory leak.
+14-Aug-2018 03:51:05.632 SEVERE [localhost-startStop-2] org.apache.catalina.loader.WebappClassLoaderBase.checkThreadLocalMapForLeaks The web application [gitbucket] created a ThreadLocal with key of type [java.lang.ThreadLocal] (value [java.lang.ThreadLocal@76f0b71]) and a value of type [akka.dispatch.forkjoin.ForkJoinPool.Submitter] (value [akka.dispatch.forkjoin.ForkJoinPool$Submitter@3e0d05b]) but failed to remove it when the web application was stopped. Threads are going to be renewed over time to try and avoid a probable memory leak.
+14-Aug-2018 03:51:05.638 INFO [job-akka.actor.default-dispatcher-4] org.apache.catalina.loader.WebappClassLoaderBase.checkStateForResourceLoading Illegal access: this web application instance has been stopped already. Could not load [akka.actor.dungeon.ChildrenContainer$Termination$]. The following stack trace is thrown for debugging purposes as well as to attempt to terminate the thread which caused the illegal access.
+ java.lang.IllegalStateException: Illegal access: this web application instance has been stopped already. Could not load [akka.actor.dungeon.ChildrenContainer$Termination$]. The following stack trace is thrown for debugging purposes as well as to attempt to terminate the thread which caused the illegal access.
+	at org.apache.catalina.loader.WebappClassLoaderBase.checkStateForResourceLoading(WebappClassLoaderBase.java:1329)
+	at org.apache.catalina.loader.WebappClassLoaderBase.checkStateForClassLoading(WebappClassLoaderBase.java:1317)
+	at org.apache.catalina.loader.WebappClassLoaderBase.loadClass(WebappClassLoaderBase.java:1176)
+	at org.apache.catalina.loader.WebappClassLoaderBase.loadClass(WebappClassLoaderBase.java:1137)
+	at akka.actor.dungeon.ChildrenContainer$TerminatingChildrenContainer.isTerminating(ChildrenContainer.scala:200)
+	at akka.actor.dungeon.Children.isTerminating(Children.scala:170)
+	at akka.actor.dungeon.Children.isTerminating$(Children.scala:170)
+	at akka.actor.ActorCell.isTerminating(ActorCell.scala:370)
+	at akka.actor.dungeon.FaultHandling.terminate(FaultHandling.scala:160)
+	at akka.actor.dungeon.FaultHandling.terminate$(FaultHandling.scala:142)
+	at akka.actor.ActorCell.terminate(ActorCell.scala:370)
+	at akka.actor.ActorCell.invokeAll$1(ActorCell.scala:468)
+	at akka.actor.ActorCell.systemInvoke(ActorCell.scala:484)
+	at akka.dispatch.Mailbox.processAllSystemMessages(Mailbox.scala:282)
+	at akka.dispatch.Mailbox.run(Mailbox.scala:223)
+	at akka.dispatch.Mailbox.exec(Mailbox.scala:234)
+	at akka.dispatch.forkjoin.ForkJoinTask.doExec(ForkJoinTask.java:260)
+	at akka.dispatch.forkjoin.ForkJoinPool$WorkQueue.runTask(ForkJoinPool.java:1339)
+	at akka.dispatch.forkjoin.ForkJoinPool.runWorker(ForkJoinPool.java:1979)
+	at akka.dispatch.forkjoin.ForkJoinWorkerThread.run(ForkJoinWorkerThread.java:107)
+
+14-Aug-2018 03:51:05.642 INFO [job-akka.actor.default-dispatcher-4] org.apache.catalina.loader.WebappClassLoaderBase.checkStateForResourceLoading Illegal access: this web application instance has been stopped already. Could not load [akka.actor.dungeon.FaultHandling$$anonfun$handleNonFatalOrInterruptedException$1]. The following stack trace is thrown for debugging purposes as well as to attempt to terminate the thread which caused the illegal access.
+ java.lang.IllegalStateException: Illegal access: this web application instance has been stopped already. Could not load [akka.actor.dungeon.FaultHandling$$anonfun$handleNonFatalOrInterruptedException$1]. The following stack trace is thrown for debugging purposes as well as to attempt to terminate the thread which caused the illegal access.
+	at org.apache.catalina.loader.WebappClassLoaderBase.checkStateForResourceLoading(WebappClassLoaderBase.java:1329)
+	at org.apache.catalina.loader.WebappClassLoaderBase.checkStateForClassLoading(WebappClassLoaderBase.java:1317)
+	at org.apache.catalina.loader.WebappClassLoaderBase.loadClass(WebappClassLoaderBase.java:1176)
+	at org.apache.catalina.loader.WebappClassLoaderBase.loadClass(WebappClassLoaderBase.java:1137)
+	at akka.actor.dungeon.FaultHandling.handleNonFatalOrInterruptedException(FaultHandling.scala:298)
+	at akka.actor.dungeon.FaultHandling.handleNonFatalOrInterruptedException$(FaultHandling.scala:298)
+	at akka.actor.ActorCell.handleNonFatalOrInterruptedException(ActorCell.scala:370)
+	at akka.actor.ActorCell.invokeAll$1(ActorCell.scala:472)
+	at akka.actor.ActorCell.systemInvoke(ActorCell.scala:484)
+	at akka.dispatch.Mailbox.processAllSystemMessages(Mailbox.scala:282)
+	at akka.dispatch.Mailbox.run(Mailbox.scala:223)
+	at akka.dispatch.Mailbox.exec(Mailbox.scala:234)
+	at akka.dispatch.forkjoin.ForkJoinTask.doExec(ForkJoinTask.java:260)
+	at akka.dispatch.forkjoin.ForkJoinPool$WorkQueue.runTask(ForkJoinPool.java:1339)
+	at akka.dispatch.forkjoin.ForkJoinPool.runWorker(ForkJoinPool.java:1979)
+	at akka.dispatch.forkjoin.ForkJoinWorkerThread.run(ForkJoinWorkerThread.java:107)
+
+14-Aug-2018 03:51:05.643 INFO [job-akka.actor.default-dispatcher-4] org.apache.catalina.loader.WebappClassLoaderBase.checkStateForResourceLoading Illegal access: this web application instance has been stopped already. Could not load [scala.util.control.NonFatal$]. The following stack trace is thrown for debugging purposes as well as to attempt to terminate the thread which caused the illegal access.
+ java.lang.IllegalStateException: Illegal access: this web application instance has been stopped already. Could not load [scala.util.control.NonFatal$]. The following stack trace is thrown for debugging purposes as well as to attempt to terminate the thread which caused the illegal access.
+	at org.apache.catalina.loader.WebappClassLoaderBase.checkStateForResourceLoading(WebappClassLoaderBase.java:1329)
+	at org.apache.catalina.loader.WebappClassLoaderBase.checkStateForClassLoading(WebappClassLoaderBase.java:1317)
+	at org.apache.catalina.loader.WebappClassLoaderBase.loadClass(WebappClassLoaderBase.java:1176)
+	at org.apache.catalina.loader.WebappClassLoaderBase.loadClass(WebappClassLoaderBase.java:1137)
+	at akka.actor.ActorSystemImpl$$anon$2.uncaughtException(ActorSystem.scala:657)
+	at akka.dispatch.Mailbox.exec(Mailbox.scala:242)
+	at akka.dispatch.forkjoin.ForkJoinTask.doExec(ForkJoinTask.java:260)
+	at akka.dispatch.forkjoin.ForkJoinPool$WorkQueue.runTask(ForkJoinPool.java:1339)
+	at akka.dispatch.forkjoin.ForkJoinPool.runWorker(ForkJoinPool.java:1979)
+	at akka.dispatch.forkjoin.ForkJoinWorkerThread.run(ForkJoinWorkerThread.java:107)
+
+14-Aug-2018 03:51:05.643 INFO [job-akka.actor.default-dispatcher-7] org.apache.catalina.loader.WebappClassLoaderBase.checkStateForResourceLoading Illegal access: this web application instance has been stopped already. Could not load [akka.actor.dungeon.ChildrenContainer$Termination$]. The following stack trace is thrown for debugging purposes as well as to attempt to terminate the thread which caused the illegal access.
+ java.lang.IllegalStateException: Illegal access: this web application instance has been stopped already. Could not load [akka.actor.dungeon.ChildrenContainer$Termination$]. The following stack trace is thrown for debugging purposes as well as to attempt to terminate the thread which caused the illegal access.
+	at org.apache.catalina.loader.WebappClassLoaderBase.checkStateForResourceLoading(WebappClassLoaderBase.java:1329)
+	at org.apache.catalina.loader.WebappClassLoaderBase.checkStateForClassLoading(WebappClassLoaderBase.java:1317)
+	at org.apache.catalina.loader.WebappClassLoaderBase.loadClass(WebappClassLoaderBase.java:1176)
+	at org.apache.catalina.loader.WebappClassLoaderBase.loadClass(WebappClassLoaderBase.java:1137)
+	at akka.actor.dungeon.FaultHandling.terminate(FaultHandling.scala:162)
+	at akka.actor.dungeon.FaultHandling.terminate$(FaultHandling.scala:142)
+	at akka.actor.ActorCell.terminate(ActorCell.scala:370)
+	at akka.actor.ActorCell.invokeAll$1(ActorCell.scala:468)
+	at akka.actor.ActorCell.systemInvoke(ActorCell.scala:484)
+	at akka.dispatch.Mailbox.processAllSystemMessages(Mailbox.scala:282)
+	at akka.dispatch.Mailbox.run(Mailbox.scala:223)
+	at akka.dispatch.Mailbox.exec(Mailbox.scala:234)
+	at akka.dispatch.forkjoin.ForkJoinTask.doExec(ForkJoinTask.java:260)
+	at akka.dispatch.forkjoin.ForkJoinPool$WorkQueue.runTask(ForkJoinPool.java:1339)
+	at akka.dispatch.forkjoin.ForkJoinPool.runWorker(ForkJoinPool.java:1979)
+	at akka.dispatch.forkjoin.ForkJoinWorkerThread.run(ForkJoinWorkerThread.java:107)
+
+14-Aug-2018 03:51:05.649 INFO [localhost-startStop-2] jenkins.model.Jenkins.cleanUp Stopping Jenkins
+14-Aug-2018 03:51:05.680 INFO [localhost-startStop-2] jenkins.model.Jenkins$18.onAttained Started termination
+14-Aug-2018 03:51:05.682 INFO [localhost-startStop-2] jenkins.model.Jenkins$18.onAttained Completed termination
+14-Aug-2018 03:51:05.682 INFO [localhost-startStop-2] jenkins.model.Jenkins._cleanUpDisconnectComputers Starting node disconnection
+14-Aug-2018 03:51:05.688 INFO [localhost-startStop-2] jenkins.model.Jenkins._cleanUpShutdownPluginManager Stopping plugin manager
+14-Aug-2018 03:51:05.688 INFO [localhost-startStop-2] jenkins.model.Jenkins._cleanUpPersistQueue Persisting build queue
+14-Aug-2018 03:51:05.693 INFO [localhost-startStop-2] jenkins.model.Jenkins._cleanUpAwaitDisconnects Waiting for node disconnection completion
+14-Aug-2018 03:51:05.694 INFO [localhost-startStop-2] jenkins.model.Jenkins.cleanUp Jenkins stopped
+14-Aug-2018 03:51:05.697 WARNING [localhost-startStop-2] org.apache.catalina.loader.WebappClassLoaderBase.clearReferencesThreads The web application [jenkins] appears to have started a thread named [Computer.threadPoolForRemoting [#3]] but has failed to stop it. This is very likely to create a memory leak. Stack trace of thread:
+ java.base@10.0.2/jdk.internal.misc.Unsafe.park(Native Method)
+ java.base@10.0.2/java.util.concurrent.locks.LockSupport.parkNanos(LockSupport.java:234)
+ java.base@10.0.2/java.util.concurrent.SynchronousQueue$TransferStack.awaitFulfill(SynchronousQueue.java:462)
+ java.base@10.0.2/java.util.concurrent.SynchronousQueue$TransferStack.transfer(SynchronousQueue.java:361)
+ java.base@10.0.2/java.util.concurrent.SynchronousQueue.poll(SynchronousQueue.java:937)
+ java.base@10.0.2/java.util.concurrent.ThreadPoolExecutor.getTask(ThreadPoolExecutor.java:1060)
+ java.base@10.0.2/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1121)
+ java.base@10.0.2/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+ java.base@10.0.2/java.lang.Thread.run(Thread.java:844)
+14-Aug-2018 03:51:05.697 WARNING [localhost-startStop-2] org.apache.catalina.loader.WebappClassLoaderBase.clearReferencesThreads The web application [jenkins] appears to have started a thread named [Computer.threadPoolForRemoting [#4]] but has failed to stop it. This is very likely to create a memory leak. Stack trace of thread:
+ java.base@10.0.2/jdk.internal.misc.Unsafe.park(Native Method)
+ java.base@10.0.2/java.util.concurrent.locks.LockSupport.parkNanos(LockSupport.java:234)
+ java.base@10.0.2/java.util.concurrent.SynchronousQueue$TransferStack.awaitFulfill(SynchronousQueue.java:462)
+ java.base@10.0.2/java.util.concurrent.SynchronousQueue$TransferStack.transfer(SynchronousQueue.java:361)
+ java.base@10.0.2/java.util.concurrent.SynchronousQueue.poll(SynchronousQueue.java:937)
+ java.base@10.0.2/java.util.concurrent.ThreadPoolExecutor.getTask(ThreadPoolExecutor.java:1060)
+ java.base@10.0.2/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1121)
+ java.base@10.0.2/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+ java.base@10.0.2/java.lang.Thread.run(Thread.java:844)
+14-Aug-2018 03:51:05.698 WARNING [localhost-startStop-2] org.apache.catalina.loader.WebappClassLoaderBase.clearReferencesThreads The web application [jenkins] appears to have started a thread named [Computer.threadPoolForRemoting [#5]] but has failed to stop it. This is very likely to create a memory leak. Stack trace of thread:
+ java.base@10.0.2/jdk.internal.misc.Unsafe.park(Native Method)
+ java.base@10.0.2/java.util.concurrent.locks.LockSupport.parkNanos(LockSupport.java:234)
+ java.base@10.0.2/java.util.concurrent.SynchronousQueue$TransferStack.awaitFulfill(SynchronousQueue.java:462)
+ java.base@10.0.2/java.util.concurrent.SynchronousQueue$TransferStack.transfer(SynchronousQueue.java:361)
+ java.base@10.0.2/java.util.concurrent.SynchronousQueue.poll(SynchronousQueue.java:937)
+ java.base@10.0.2/java.util.concurrent.ThreadPoolExecutor.getTask(ThreadPoolExecutor.java:1060)
+ java.base@10.0.2/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1121)
+ java.base@10.0.2/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+ java.base@10.0.2/java.lang.Thread.run(Thread.java:844)
+14-Aug-2018 03:51:05.699 SEVERE [localhost-startStop-2] org.apache.catalina.loader.WebappClassLoaderBase.checkThreadLocalMapForLeaks The web application [jenkins] created a ThreadLocal with key of type [java.lang.ThreadLocal] (value [java.lang.ThreadLocal@17ac3c6c]) and a value of type [org.acegisecurity.context.SecurityContextImpl] (value [org.acegisecurity.context.SecurityContextImpl@ffffffff: Null authentication]) but failed to remove it when the web application was stopped. Threads are going to be renewed over time to try and avoid a probable memory leak.
+14-Aug-2018 03:51:05.699 SEVERE [localhost-startStop-2] org.apache.catalina.loader.WebappClassLoaderBase.checkThreadLocalMapForLeaks The web application [jenkins] created a ThreadLocal with key of type [java.lang.ThreadLocal] (value [java.lang.ThreadLocal@17ac3c6c]) and a value of type [org.acegisecurity.context.SecurityContextImpl] (value [org.acegisecurity.context.SecurityContextImpl@ffffffff: Null authentication]) but failed to remove it when the web application was stopped. Threads are going to be renewed over time to try and avoid a probable memory leak.
+14-Aug-2018 03:51:05.699 SEVERE [localhost-startStop-2] org.apache.catalina.loader.WebappClassLoaderBase.checkThreadLocalMapForLeaks The web application [jenkins] created a ThreadLocal with key of type [java.lang.ThreadLocal] (value [java.lang.ThreadLocal@17ac3c6c]) and a value of type [org.acegisecurity.context.SecurityContextImpl] (value [org.acegisecurity.context.SecurityContextImpl@ffffffff: Null authentication]) but failed to remove it when the web application was stopped. Threads are going to be renewed over time to try and avoid a probable memory leak.
+14-Aug-2018 03:51:05.700 SEVERE [localhost-startStop-2] org.apache.catalina.loader.WebappClassLoaderBase.checkThreadLocalMapForLeaks The web application [jenkins] created a ThreadLocal with key of type [java.lang.ThreadLocal] (value [java.lang.ThreadLocal@17ac3c6c]) and a value of type [org.acegisecurity.context.SecurityContextImpl] (value [org.acegisecurity.context.SecurityContextImpl@ffffffff: Null authentication]) but failed to remove it when the web application was stopped. Threads are going to be renewed over time to try and avoid a probable memory leak.
+14-Aug-2018 03:51:05.734 INFO [Thread-7] org.apache.coyote.AbstractProtocol.stop Stopping ProtocolHandler ["http-nio-8080"]
+14-Aug-2018 03:51:05.737 INFO [Thread-7] org.apache.coyote.AbstractProtocol.stop Stopping ProtocolHandler ["ajp-nio-8009"]
+14-Aug-2018 03:51:05.739 INFO [Thread-7] org.apache.coyote.AbstractProtocol.destroy Destroying ProtocolHandler ["http-nio-8080"]
+14-Aug-2018 03:51:05.740 INFO [Thread-7] org.apache.coyote.AbstractProtocol.destroy Destroying ProtocolHandler ["ajp-nio-8009"]
